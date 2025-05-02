@@ -9,7 +9,7 @@ import RSVP from "./components/RSVP";
 import Countdown from "./components/Countdown";
 import Footer from "./components/Footer";
 import Confetti from "./components/Confetti";
-import mermaidImg2 from "./image/mermaid2.png";
+import mermaidImg from "./image/mermaid.png";
 
 function App() {
   const [showConfetti, setShowConfetti] = useState(false);
@@ -100,7 +100,7 @@ function App() {
           {/* Decorative mermaid in corner */}
           <div className="absolute -bottom-10 -right-10 w-32 h-32 opacity-80 pointer-events-none animate-float">
             <img
-              src={mermaidImg2}
+              src={mermaidImg}
               alt=""
               aria-hidden="true"
               className="object-contain w-full h-full"
