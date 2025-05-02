@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Mermaid';
+  src: url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 110, 156, 0.5),
+                0 0 10px rgba(255, 110, 156, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 110, 156, 0.8),
+                 0 0 30px rgba(255, 110, 156, 0.8);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(255, 110, 156, 0.5),
+                0 0 10px rgba(255, 110, 156, 0.5);
+  }
+}
+
+@keyframes sway {
+  0% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes swimRightToLeft {
+  0% {
+    left: 105%;
+  }
+  100% {
+    left: -15%;
+  }
+}
+
+@keyframes swimLeftToRight {
+  0% {
+    left: -15%;
+  }
+  100% {
+    left: 105%;
+  }
+}
+
+@keyframes tailWiggle {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(15deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+html {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2364e9ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='10' /></svg>") 12 12, auto;
+}
+
+.font-mermaid {
+  font-family: 'Pacifico', cursive, system-ui, sans-serif;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s ease-in-out infinite;
+}
